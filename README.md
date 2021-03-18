@@ -3,9 +3,7 @@ Add a Calendly link directly into your Hugo page in no time with a simple shortc
 Without having to copy&paste then edit plain html.
 
 Simply add a shortcode block to any page like this...
-```
-< hugo-calendly/hugo-calendly calendar="<insert your calendar name here>" >
-```
+<blockquote>&#123;{< hugo-calendly/calendly calendar="&lt;insert your calendar name here&gt;" >}&#125;</blockquote>
 ... and that's it. Hugo will take care of the rest.
 
 Your page will show a link that takes your visitors straight to your Calendly page where they can book a time with you.
@@ -53,14 +51,14 @@ From the examples above, let's assume we have found the calendar name `janedoe`.
 
 1. Add a shortcode to your page's markdown file:
 
-   ```
-   < hugo-calendly/calendly calendar="janedoe" >
-   ```
+   <blockquote>
+   &#123;{< hugo-calendly/calendly calendar="janedoe" >}&#125;
+   </blockquote>
 2. *(Optional)* Or, if you want to point directly to the event type from the example above, use this:
 
-   ```
-   < hugo-calendly/calendly calendar="janedoe/my-event" >
-   ```
+   <blockquote>
+   &#123;{< hugo-calendly/calendly calendar="janedoe/my-event" >}&#125;
+   </blockquote>
 
 And that's all. You should be ready to go.
 
@@ -69,11 +67,11 @@ By default, the shortcode will make the link text say: "Schedule a time".
 You can change that.
 
 Simply add a closing shortcode tag and put your desired text between the shortcode tags:
-```
-< hugo-calendly/calendly calendar="janedoe" >
+<blockquote>
+&#123;{< hugo-calendly/calendly calendar="janedoe" >}&#125;
   Book a time to talk now!
-< /hugo-calendly/calendly >
-```
+&#123;{< /hugo-calendly/calendly >}&#125;
+</blockquote>
 
 Now your Calendly link will say "Book a time to talk now!"
 
