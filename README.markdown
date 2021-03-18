@@ -4,7 +4,7 @@ Without having to copy&paste then edit plain html.
 
 Simply add a shortcode block to any page like this...
 ```
-{{< hugo-calendly calendar="<insert your calendar name here>">}}
+{{< hugo-calendly/hugo-calendly calendar="<insert your calendar name here>">}}
 ```
 ... and that's it. Hugo will take care of the rest.
 
