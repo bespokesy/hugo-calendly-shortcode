@@ -76,4 +76,4 @@ Simply add a closing shortcode tag and put your desired text between the shortco
 Now your Calendly link will say "Book a time to talk now!"
 
 # Troubleshooting / Bugs
-If you run into any problems, check if someone else raised an [issue](https://github.com/bvotteler/hugo-calendly/issues) yet. If not, add a new one and I'll take get back to you.
+If you run into any problems, check if someone else raised an [issue](https://github.com/bvotteler/hugo-calendly/issues) yet. If not, add a new one and I'll get back to you.
