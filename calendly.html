@@ -1,0 +1,20 @@
+{{ $calendar := default "" (.Get "calendar") }}
+{{ if $calendar }}
+<!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/{{ $calendar }}'});return false;">
+    {{if .Inner}}
+    {{ .Inner }}
+    {{else}}
+    Schedule a time
+    {{end}}
+</a>
+<!-- Calendly link widget end -->
+{{ else }}
+<p style="background-color: yellow;">
+    I couldn't find the <code>calendar</code> parameter. Remember to add it like this: <br />
+    <code>&lt;hugo-calendly/calendly calendar="janedoe"&gt;</code> <br />
+    (Assuming <code>janedoe</code> is your Calendly calendar name.)
+</p>
+{{ end }}
