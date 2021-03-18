@@ -4,7 +4,7 @@ Without having to copy&paste then edit plain html.
 
 Simply add a shortcode block to any page like this...
 ```
-{{</* hugo-calendly/hugo-calendly calendar="<insert your calendar name here>" */>}}
+< hugo-calendly/hugo-calendly calendar="<insert your calendar name here>" >
 ```
 ... and that's it. Hugo will take care of the rest.
 
@@ -54,12 +54,12 @@ From the examples above, let's assume we have found the calendar name `janedoe`.
 1. Add a shortcode to your page's markdown file:
 
    ```
-   {{</* hugo-calendly/calendly calendar="janedoe" */>}}
+   < hugo-calendly/calendly calendar="janedoe" >
    ```
 2. *(Optional)* Or, if you want to point directly to the event type from the example above, use this:
 
    ```
-   {{</* hugo-calendly/calendly calendar="janedoe/my-event" */>}}
+   < hugo-calendly/calendly calendar="janedoe/my-event" >
    ```
 
 And that's all. You should be ready to go.
@@ -70,9 +70,9 @@ You can change that.
 
 Simply add a closing shortcode tag and put your desired text between the shortcode tags:
 ```
-{{</* hugo-calendly/calendly calendar="janedoe" */>}}
+< hugo-calendly/calendly calendar="janedoe" >
   Book a time to talk now!
-{{</* /hugo-calendly/calendly */>}}
+< /hugo-calendly/calendly >
 ```
 
 Now your Calendly link will say "Book a time to talk now!"
