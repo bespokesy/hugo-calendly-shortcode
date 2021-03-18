@@ -8,7 +8,7 @@ Simply add a shortcode block to any page like this...
 
 Your page will show a link that takes your visitors straight to your Calendly page where they can book a time with you.
 
-TODO: insert example gif
+![demo gif of hugo-calendly](http://i.imgur.com/KxnCQ7i.gif)
 
 # Requirements
 You will need:
