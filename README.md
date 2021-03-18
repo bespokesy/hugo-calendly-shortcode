@@ -1,6 +1,6 @@
 # hugo-calendly-shortcode [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 Add a Calendly link directly into your Hugo page in no time with a simple shortcode block!  
-Without having to copy&paste then edit plain html.
+Without having to copy & paste then edit plain html.
 
 Simply add a shortcode block to any page like this...
 ```
@@ -50,28 +50,16 @@ git rm themes/hugo-calendly-shortcode
 In order to embed it we need a Calendly calendar name, and a bit of shortcode for your hugo page.  
 That's all.
 
-## Pick your Calendly calendar name
-I will assume you have an event type setup.  
-(If you need help with that, [follow Calendly's instructions](https://help.calendly.com/hc/en-us/articles/115002939274-Account-setup#2).)
-1. Visit your [Calendly events page](https://calendly.com/event_types/user/me),
-2. Jot down your calendly name.
-
-   It should show under your name on the events page. e.g. if it shows `calendly.com/janedoe`, we want the part after `calendly.com/`. In this example that is `janedoe`
-
-3. *(Optional)* If you want to direct people to a specific event, open that event and get the event name from the event link shown under "What event is this?".
-
-   e.g. Your event invitation link shows `calendly.com/janedoe/my-event`. In this case, our calendar name is `janedoe/my-event`
-
-## Add hugo-calendly-shortcode to your page
-From the examples above, let's assume we have found the calendar name `janedoe`.
-
-1. Add a shortcode to your page's markdown file:
-
+1. Pick a Calendly calendar name. e.g. `janedoe`
+   - *(Optional)* If you want to target a specific event type, append it after a `/` symbol. e.g. `janedoe/my-event`
+   - If you need help with event types, [follow Calendly's instructions](https://help.calendly.com/hc/en-us/articles/115002939274-Account-setup#2).
+2. Add a shortcode to your page's markdown file and add the calendar/event name as `calendar` parameter. 
+   
+   For example:
    ```
    {{< calendly calendar="janedoe" >}}
    ```
-2. *(Optional)* Or, if you want to point directly to the event type from the example above, use this:
-
+   Or with a specific event type:
    ```
    {{< calendly calendar="janedoe/my-event" >}}
    ```
@@ -79,10 +67,9 @@ From the examples above, let's assume we have found the calendar name `janedoe`.
 And that's all. You should be ready to go.
 
 ## Change the link text
-By default, the shortcode will make the link text say: "Schedule a time".  
-You can change that.
+By default, the shortcode will make the link text say: "Schedule a time".
 
-Simply add a closing shortcode tag and put your desired text between the shortcode tags:
+To change the text, simply add a closing shortcode tag and put your desired text between the shortcode tags:
 ```
 {{< calendly calendar="janedoe" >}}
   Book a time to talk now!
