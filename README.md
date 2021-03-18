@@ -26,11 +26,10 @@ You will need:
 
 # Installing hugo-calendly
 1. Navigate to your Hugo page's home folder.
-2. *(Optional)* If it doesn't exist, yet, create a `layouts/shortcodes` folder.
-3. Add hugo-calendly via git:
+2. Add hugo-calendly as submodule via git:
 
    ```bash
-   git submodule add git@github.com:bvotteler/hugo-calendly.git layouts/shortcodes/
+   git submodule add git@github.com:bvotteler/hugo-calendly.git layouts/shortcodes/hugo-calendly
    ```
 
 # Using hugo-calendly
