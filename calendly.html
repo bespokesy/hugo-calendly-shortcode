@@ -4,10 +4,10 @@
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/{{ $calendar }}'});return false;">
-    {{if .Inner}}
-    {{ .Inner }}
-    {{else}}
+    {{if or (not (.Inner)) (not (eq .Inner ""))}}
     Schedule a time
+    {{else}}
+    {{ .Inner }}
     {{end}}
 </a>
 <!-- Calendly link widget end -->
