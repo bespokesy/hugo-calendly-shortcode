@@ -40,12 +40,13 @@ git submodule update --remote --merge
 ```
 
 ## Uninstall hugo-calendly-shortcode
-To uninstall the submodule, use these commands:
-```
-git submodule deinit -f themes/hugo-calendly-shortcode
-git rm -f themes/hugo-calendly-shortcode
-```
-
+1. Remove the shortcodes from any pages,
+2. Remove the theme from your `config.toml` file,
+3. From Hugo's home folder, run these commands to uninstall the submodule: 
+   ```
+   git submodule deinit -f themes/hugo-calendly-shortcode
+   git rm -f themes/hugo-calendly-shortcode
+   ```
 # Using hugo-calendly
 In order to embed it we need a Calendly calendar name, and a bit of shortcode for your hugo page.  
 That's all.
