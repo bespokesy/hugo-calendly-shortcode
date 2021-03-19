@@ -42,8 +42,8 @@ git submodule update --remote --merge
 ## Uninstall hugo-calendly-shortcode
 To uninstall the submodule, use these commands:
 ```
-git submodule deinit themes/hugo-calendly-shortcode
-git rm themes/hugo-calendly-shortcode
+git submodule deinit -f themes/hugo-calendly-shortcode
+git rm -f themes/hugo-calendly-shortcode
 ```
 
 # Using hugo-calendly
