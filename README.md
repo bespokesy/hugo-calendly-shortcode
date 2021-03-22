@@ -25,7 +25,7 @@ You will need:
 2. Add hugo-calendly-shortcode as a theme submodule with git:
 
    ```bash
-   git submodule add git@github.com:bvotteler/hugo-calendly-shortcode.git themes/hugo-calendly-shortcode
+   git submodule add git@github.com:bespokesy/hugo-calendly-shortcode.git themes/hugo-calendly-shortcode
    ```
 3. Add `hugo-calendly-shortcode` as an element of the `theme` list in your `config.toml`. For example:
    ```
@@ -80,4 +80,4 @@ To change the text, simply add a closing shortcode tag and put your desired text
 Now your Calendly link will say "Book a time to talk now!"
 
 # Troubleshooting, bugs & help
-If you run into any problems, check if someone else raised the same [issue on GitHub](https://github.com/bvotteler/hugo-calendly-shortcode/issues) and add a comment. If not, please add a new issue so I can address it.
+If you run into any problems, check if someone else raised the same [issue on GitHub](https://github.com/bespokesy/hugo-calendly-shortcode/issues) and add a comment. If not, please add a new issue so I can address it.
