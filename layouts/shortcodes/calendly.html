@@ -6,8 +6,8 @@
     {{ $scheduleText := default (default "Schedule time with me" $.Inner) ($.Get "text")}}
     {{ $showBranding := default true (not (eq ($.Get "hideBranding") true)) }}
 
-    {{/*  add CSS if type is a popup (or empty which defaults to a popup link)  */}}
-    {{ if in (slice "popupWidget" "popupLink" "") $type}}
+    {{/*  add CSS link if type is a popup (or empty which defaults to a popup link)  */}}
+    {{ if in (slice (index $allowedTypes "badge") (index $allowedTypes "link") "") $type}}
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     {{ end }}
 
@@ -22,7 +22,7 @@
         {{ $onloadJsSnippet := print "window.onload = function() { Calendly.initBadgeWidget({ url: '" $calendarUrl "', text: '" $scheduleText "', color: '#00a2ff', textColor: '#ffffff', branding:" $showBranding " }); }" }}
         <script type="text/javascript">{{ $onloadJsSnippet | safeJS }}</script>
     {{ else if or (eq $type (index $allowedTypes "link")) (eq $type "") }}
-        {{/*  warn if type has not been chosen deliberately  */}}
+        {{/*  warn if type has not been chosen explicitly  */}}
         {{ if eq $type "" }}
             {{ warnf "Missing or empty parameter 'type' for calendly shortcode in %q. Assuming: type=%q" $.Page.File (index $allowedTypes "link")}}
         {{ end }}
