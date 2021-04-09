@@ -1,4 +1,4 @@
-# hugo-calendly-shortcode-free [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# hugo-calendly-shortcode [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 Add a Calendly link directly into your Hugo page in no time with a simple shortcode block!  
 Without having to copy & paste then edit plain html.
 
@@ -10,7 +10,7 @@ Simply add a shortcode block to any page like this...
 
 Your page will show a link that takes your visitors straight to your Calendly page where they can book a time with you.
 
-![demo gif of hugo-calendly-shortcode-free](http://i.imgur.com/KxnCQ7i.gif)
+![demo gif of hugo-calendly-shortcode](http://i.imgur.com/KxnCQ7i.gif)
 
 # Requirements
 You will need:
@@ -18,34 +18,34 @@ You will need:
 - a [Calendly](https://calendly.com) account,
 
   (In case you don't have one yet: it has a generous FREE tier.)
-- [git](https://git-scm.com/) to install hugo-calendly-shortcode-free as a [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+- [git](https://git-scm.com/) to install hugo-calendly-shortcode as a [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
-# Install hugo-calendly-shortcode-free
+# Install hugo-calendly-shortcode
 1. Navigate to your Hugo page's home folder.
-2. Add hugo-calendly-shortcode-free as a theme submodule with git:
+2. Add hugo-calendly-shortcode as a theme submodule with git:
 
    ```bash
-   git submodule add git@github.com:bespokesy/hugo-calendly-shortcode-free.git themes/hugo-calendly-shortcode-free
+   git submodule add git@github.com:bespokesy/hugo-calendly-shortcode.git themes/hugo-calendly-shortcode
    ```
-3. Add `hugo-calendly-shortcode-free` as an element of the `theme` list in your `config.toml`. For example:
+3. Add `hugo-calendly-shortcode` as an element of the `theme` list in your `config.toml`. For example:
    ```
-   theme = ["hugo-calendly-shortcode-free, "my-theme"]
+   theme = ["hugo-calendly-shortcode, "my-theme"]
    ```
    (Note: adding it as left-most entry makes sure other themes won't override it by accident.)
 
-## Update hugo-calendly-shortcode-free
+## Update hugo-calendly-shortcode
 From Hugo's home folder, run this git command to update the submodule (including all the other ones):
 ```bash
 git submodule update --remote --merge
 ```
 
-## Uninstall hugo-calendly-shortcode-free
+## Uninstall hugo-calendly-shortcode
 1. Remove the shortcodes from any pages,
 2. Remove the theme from your `config.toml` file,
 3. From Hugo's home folder, run these commands to uninstall the submodule: 
    ```
-   git submodule deinit -f themes/hugo-calendly-shortcode-free
-   git rm -f themes/hugo-calendly-shortcode-free
+   git submodule deinit -f themes/hugo-calendly-shortcode
+   git rm -f themes/hugo-calendly-shortcode
    ```
 # Using hugo-calendly
 In order to embed it we need a Calendly calendar name, and a bit of shortcode for your hugo page.  
@@ -80,4 +80,4 @@ To change the text, simply add a closing shortcode tag and put your desired text
 Now your Calendly link will say "Book a time to talk now!"
 
 # Troubleshooting, bugs & help
-If you run into any problems, check if someone else raised the same [issue on GitHub](https://github.com/bespokesy/hugo-calendly-shortcode-free/issues) and add a comment. If not, please add a new issue so I can address it.
+If you run into any problems, check if someone else raised the same [issue on GitHub](https://github.com/bespokesy/hugo-calendly-shortcode/issues) and add a comment. If not, please add a new issue so I can address it.
