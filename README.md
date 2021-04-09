@@ -4,7 +4,7 @@ Without having to copy & paste then edit plain html.
 
 Simply add a shortcode block to any page like this...
 ```
-{{< calendly calendar="<insert your calendar name here>" >}}
+{{< calendly calendar="<insert your calendar name here>" />}}
 ```
 ... and that's it. Hugo will take care of the rest.
 
@@ -77,11 +77,11 @@ That's all.
    
    For example:
    ```
-   {{< calendly calendar="janedoe" >}}
+   {{< calendly calendar="janedoe" />}}
    ```
    Or with a specific event type:
    ```
-   {{< calendly calendar="janedoe/my-event" >}}
+   {{< calendly calendar="janedoe/my-event" />}}
    ```
 
 And that's all. You should be ready to go.
