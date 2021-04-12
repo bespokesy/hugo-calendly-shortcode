@@ -59,12 +59,7 @@ git submodule update --remote --merge
    ```
 
 ## Install via copy and paste
-1. Simply copy the calendly.html file into `<your_hugo_page_root>/layouts/shortcode` folder.
-2. Add `hugo-calendly-shortcode` as an element of the `theme` list in your `config.toml`. For example:
-   ```
-   theme = ["hugo-calendly-shortcode, "my-theme"]
-   ```
-   (Note: adding it as left-most entry makes sure other themes won't override it by accident.)
+1. Copy the [calendly.html](layouts/shortcodes/calendly.html) file into `<your_hugo_page_root>/layouts/shortcodes/` folder.
 
 # Using hugo-calendly
 In order to embed it we need a Calendly calendar name, and a bit of shortcode for your hugo page.  
