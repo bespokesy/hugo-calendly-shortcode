@@ -96,5 +96,23 @@ To change the text, simply add a closing shortcode tag and put your desired text
 
 Now your Calendly link will say "Book a time to talk now!"
 
+# Advanced features with hugo-calendly-shortcode-plus
+I am building a version with more features for Calendly Premium or Pro owners.  
+Additional features will enable you to:
+- Apply CSS styles to customize the look and feel for Calendly
+- Add UTM parameters to track your embedded Calendly forms
+- Pull parameter sets from different sources:
+  - Shortcode parameters (same as with this version),
+  - Hugo page front-matter,
+  - Hugo site configuration parameters,
+  - Hugo data files, or
+  - A mix of all of the above.
+
+If you would like to receive notifications as my work on that progresses, follow [this link to subscribe to updates by mail](https://landing.mailerlite.com/webforms/landing/v3z7p1).
+
 # Troubleshooting, bugs & help
 If you run into any problems, check if someone else raised the same [issue on GitHub](https://github.com/bespokesy/hugo-calendly-shortcode/issues) and add a comment. If not, please add a new issue so I can address it.
+
+# Get in touch
+Just want to say hi? Ask something else?  
+Sure thing! You will find my contact details on [bespokesy.dev/contact](https://bespokesy.dev/contact/).
