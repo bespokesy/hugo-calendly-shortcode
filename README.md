@@ -12,7 +12,7 @@ Your page will show a link that takes your visitors straight to your Calendly pa
 
 ![demo gif of hugo-calendly-shortcode](http://i.imgur.com/KxnCQ7i.gif)
 
-Visit my [demo page](https://bespokesy.github.io/hugo-calendly-shortcode-demo-site/) for more examples.
+Visit my [demo pages](https://docs.hcs.bespokesy.dev/examples/hugo-calendly-shortcode/) for more examples.
 
 # Requirements
 You will need:
@@ -81,9 +81,6 @@ That's all.
 
 And that's all. You should be ready to go.
 
-## Demo page
-To see more examples, visit my [demo page](https://bespokesy.github.io/hugo-calendly-shortcode-demo-site/). It will show you the shortcode and what it looks like on an actual Hugo page.
-
 ## Change the link text
 By default, the shortcode will make the link text say: "Schedule a time".
 
@@ -96,13 +93,19 @@ To change the text, simply add a closing shortcode tag and put your desired text
 
 Now your Calendly link will say "Book a time to talk now!"
 
+## More documentation
+For more details on how to use the shortcode, and what you can do with it, visit the [documentation](https://docs.hcs.bespokesy.dev/overview/). 
+
+The docs will show [examples of shortcode snippets](https://docs.hcs.bespokesy.dev/examples/hugo-calendly-shortcode/) and what it looks like, available shortcode [parameters](https://docs.hcs.bespokesy.dev/parameters/), how to [solve errors or warnings](https://docs.hcs.bespokesy.dev/errors_warnings/), and more.
+
 # Advanced features with hugo-calendly-shortcode-plus
 I am building a version with more features for Calendly Premium or Pro owners.  
 Additional features will enable you to:
-- Apply CSS styles to customize the look and feel for Calendly
+- Use advanced customization features available to Calendly Premium users
+- Apply styles to customize the look and feel for Calendly
 - Add UTM parameters to track your embedded Calendly forms
 - Pull parameter sets from different sources:
-  - Shortcode parameters (same as with this version),
+  - Parameters added to the shortcode itself (same as with this version),
   - Hugo page front-matter,
   - Hugo site configuration parameters,
   - Hugo data files, or
@@ -111,7 +114,7 @@ Additional features will enable you to:
 If you would like to receive notifications as my work on that progresses, follow [this link to subscribe to updates by mail](https://landing.mailerlite.com/webforms/landing/v3z7p1).
 
 # Troubleshooting, bugs & help
-If you run into any problems, check if someone else raised the same [issue on GitHub](https://github.com/bespokesy/hugo-calendly-shortcode/issues) and add a comment. If not, please add a new issue so I can address it.
+If you run into any problems that can't be fixed by [consulting the docs](https://docs.hcs.bespokesy.dev/errors_warnings/), check if someone else raised the same [issue on GitHub](https://github.com/bespokesy/hugo-calendly-shortcode/issues) and add a comment. If not, please add a new issue so I can address it.
 
 # Get in touch
 Just want to say hi? Ask something else?  
