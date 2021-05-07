@@ -1,4 +1,5 @@
 {{ $calendar := .Get "calendar" }}
+{{ $helpAppend := "For more help, check out the errors/warnings page: https://docs.hcs.bespokesy.dev/errors_warnings/" }}
 {{ with $calendar }}
     {{ $calendarUrl := print "https://calendly.com/" $calendar }}
     {{ $allowedTypes := (dict "inline" "inlineEmbed" "badge" "popupWidget" "link" "popupLink") }}
@@ -24,14 +25,14 @@
     {{ else if or (eq $type (index $allowedTypes "link")) (eq $type "") }}
         {{/*  warn if type has not been chosen explicitly  */}}
         {{ if eq $type "" }}
-            {{ warnf "Missing or empty parameter 'type' for calendly shortcode in %q. Assuming: type=%q" $.Page.File (index $allowedTypes "link")}}
+            {{ warnf "Missing or empty parameter 'type' for calendly shortcode in %q. Assuming: type=%q. %s" $.Page.File (index $allowedTypes "link") $helpAppend }}
         {{ end }}
         {{/*  add popup link  */}}
         {{ $onClickSnippet := print "Calendly.initPopupWidget({url: '" $calendarUrl "'});return false;" }}
         <a href="" onclick={{ $onClickSnippet | safeJS }}>{{ $scheduleText }}</a>
     {{ else }}
-        {{ errorf "Invalid type parameter (%q) for calendly shortcode in page %q - supported types are: '%s'" $type $.Page.File (delimit $allowedTypes "', '")}}
+        {{ errorf "Invalid type parameter (%q) for calendly shortcode in page %q - supported types are: '%s'. %s" $type $.Page.File (delimit $allowedTypes "', '") $helpAppend }}
     {{ end }}
 {{ else }}
-    {{ errorf "Calendly shortcode needs a non-empty calendar parameter in file %q" .Page.File }}
+    {{ errorf "Calendly shortcode needs a non-empty calendar parameter in file %q. %s" .Page.File $helpAppend }}
 {{ end }}
