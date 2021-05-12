@@ -111,8 +111,7 @@ Additional features will enable you to:
 
 Visit the [side-by-side features page](https://docs.hcs.bespokesy.dev/overview/#features) to compare of this version with the Plus version.
 
-## Buy it
-You can buy [Hugo Calendly Shortcode Plus on gumtree](https://gum.co/DwZrW).
+If you want the advanced features, you can buy [Hugo Calendly Shortcode Plus on gumtree](https://gum.co/hugo-calendly-shortcode-plus).
 
 # Troubleshooting, bugs & help
 If you run into any problems that can't be fixed by [consulting the docs](https://docs.hcs.bespokesy.dev/errors_warnings/), check if someone else raised the same [issue on GitHub](https://github.com/bespokesy/hugo-calendly-shortcode/issues) and add a comment. If not, please add a new issue so I can address it.
