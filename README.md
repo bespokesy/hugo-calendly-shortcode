@@ -98,7 +98,7 @@ For more details on how to use the shortcode, and what you can do with it, visit
 
 The docs will show [examples of shortcode snippets](https://docs.hcs.bespokesy.dev/examples/hugo-calendly-shortcode/) and what it looks like, available shortcode [parameters](https://docs.hcs.bespokesy.dev/parameters/), how to [solve errors or warnings](https://docs.hcs.bespokesy.dev/errors_warnings/), and more.
 
-# Advanced features with hugo-calendly-shortcode-plus
+# Advanced features with Hugo Calendly Shortcode Plus
 I am building a version with more features for Calendly Premium or Pro owners.  
 Additional features will enable you to:
 - Use advanced customization features available to Calendly Premium users
@@ -111,7 +111,10 @@ Additional features will enable you to:
   - Hugo data files, or
   - A mix of all of the above.
 
-If you would like to receive notifications as my work on that progresses, follow [this link to subscribe to updates by mail](https://landing.mailerlite.com/webforms/landing/v3z7p1).
+Visit the [side-by-side features page](https://docs.hcs.bespokesy.dev/overview/#features) to compare of this version with the Plus version.
+
+## Buy it
+You can buy [Hugo Calendly Shortcode Plus on gumtree](https://gum.co/DwZrW).
 
 # Troubleshooting, bugs & help
 If you run into any problems that can't be fixed by [consulting the docs](https://docs.hcs.bespokesy.dev/errors_warnings/), check if someone else raised the same [issue on GitHub](https://github.com/bespokesy/hugo-calendly-shortcode/issues) and add a comment. If not, please add a new issue so I can address it.
