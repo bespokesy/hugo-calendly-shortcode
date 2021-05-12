@@ -18,8 +18,6 @@ Visit my [demo pages](https://docs.hcs.bespokesy.dev/examples/hugo-calendly-shor
 You will need:
 - a [Hugo](https://gohugo.io/) page,
 - a [Calendly](https://calendly.com) account,
-
-  (In case you don't have one yet: it has a generous FREE tier.)
 - (optional) [git](https://git-scm.com/) to install hugo-calendly-shortcode as a [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
 # Install hugo-calendly-shortcode
